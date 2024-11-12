@@ -27,4 +27,4 @@ jobs:
       run: docker build . --file Dockerfile --tag get-weather-app:latest
 
     - name: Push Docker Image to DockerHub
-      run: docker push get-weather-app:latest
+      run: docker push waelhas/get-weather-app:latest
