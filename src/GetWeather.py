@@ -1,6 +1,7 @@
+import os
 import requests
 
-key = 'Replace with your API key'
+key = os.getenv('API_KEY')
 city = input("Enter the city: ")
 
 # URL for the OpenWeatherMap API
@@ -17,3 +18,7 @@ if response.status_code == 200:
     print(f"The temperature in {city} is {temperature}°C")
 else:
     print(f"Failed to retrieve data: {response.status_code}")
+
+
+
+    
