@@ -16,7 +16,7 @@
 
 ## Requirements
 - Python 3.9 or higher
-- A valid OpenWeatherMap API key. Liink to get one: [OpenWeatherMap API Keys](https://openweathermap.org/appid)
+- A valid OpenWeatherMap API key. Link to get one: [OpenWeatherMap API Keys](https://openweathermap.org/appid)
 - `requests` library for Python
 
 ## Setup Instructions
