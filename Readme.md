@@ -27,23 +27,23 @@ git clone <repository-url>
 cd <repository-folder>
 ```
 
-
-
-
 ### 2. Install Dependencies
 ```bash
  pip install -r requirements.txt
 ```
 
+### 3. Set the Environment Variable for the API Key
+```bash
+export OPENWEATHER_API_KEY=<your_api_key>
+```
 
-### 3. Run the Script
+### 4. Run the Script
 ```bash
  python GetWeather.py
 ```
 
 ### Using Docker
-
-
+```bash
 docker build -t getweather .
 
 docker run -it getweather

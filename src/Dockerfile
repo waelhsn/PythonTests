@@ -4,14 +4,14 @@ FROM python:3.9-slim
 # Set the working directory in the container
 WORKDIR /usr/src/app
 
-# Copy the current directory contents into the container at /usr/src/app
+# Copy the current directory contents into the container
 COPY . .
 
-# Install any needed packages specified in requirements.txt
+# Install any needed packages
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Make port 80 available to the world outside this container
+# Expose a port if needed
 EXPOSE 80
 
-# Run test.py when the container launches
+# Run the script when the container launches
 CMD ["python", "./GetWeather.py"]
