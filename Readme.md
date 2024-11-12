@@ -42,8 +42,23 @@ export OPENWEATHER_API_KEY=<your_api_key>
  python GetWeather.py
 ```
 
-### Using Docker
-```bash
-docker build -t getweather .
+## Using Docker
 
-docker run -it getweather
+### 1. Build the Docker image:
+
+bash
+Copy code
+
+```bash
+docker build -t <image-name> .
+```
+### 2. Run the Docker Container with an Environment Variable:
+
+```bash
+docker run -it --env API_KEY=your_api_key getweather
+```
+### 3. Verify the Environment Variable Inside the Container
+  
+```bash
+echo $API_KEY
+```
