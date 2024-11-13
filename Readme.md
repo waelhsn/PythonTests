@@ -1,6 +1,9 @@
 # GetWeather Application
 
+[![Docker Image CI](https://github.com/waelhsn/PythonTests/actions/workflows/docker-image.yml/badge.svg)](https://github.com/waelhsn/PythonTests/actions/workflows/docker-image.yml)
+
 ## Overview
+
 `GetWeather.py` is a simple Python script that retrieves the current temperature for a specified city using the OpenWeatherMap API. The project also includes a `Dockerfile` for containerizing the application.
 
 ## Features
